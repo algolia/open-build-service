@@ -178,7 +178,7 @@ OBS_VM_NET=""
 # Only enable network for kvm (now the only one supported)
 if [ "$OBS_VM_TYPE" = "kvm" ]; then
     if [ "x${OBS_VM_ENABLE_NET}" = "xtrue" ]; then
-        OBS_VM_NET="--vm-net"
+        OBS_VM_NET="--vm-network"
     fi
 fi
 
