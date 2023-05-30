@@ -82,7 +82,7 @@ my $vmdisk_swapsize;
 my $vmdisk_filesystem;
 my $vmdisk_mount_options;
 my $vmdisk_clean;
-my $vm_net;
+my $vm_network;
 my $emulator_script;
 my $hugetlbfs;
 my $workerid;
@@ -503,7 +503,7 @@ while (@ARGV) {
     $vm_worker_instance = shift @ARGV;
     next;
   }
-  if ($ARGV[0] eq '--vm-net') {
+  if ($ARGV[0] eq '--vm-network') {
     shift @ARGV;
     $vm_network = 1;
     next;
