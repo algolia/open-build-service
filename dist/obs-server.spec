@@ -472,7 +472,7 @@ fi
 # drop testcases for now
 rm -rf %{buildroot}/srv/www/obs/api/spec
 # only config for CI
-rm %{buildroot}/srv/www/obs/api/config/brakeman.ignore
+rm -f %{buildroot}/srv/www/obs/api/config/brakeman.ignore
 
 # fail when Makefiles created a directory
 if ! test -L %{buildroot}%{obs_backend_dir}/build; then
